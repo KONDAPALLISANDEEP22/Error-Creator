@@ -1,0 +1,13 @@
+2.Problem Statement:
+There is a ant on your balcony.lt wants to leave the rail so sometimes it moves right and sometimes it moves left until it gets exhausted Given an integer atray A of size N which consists of integer 1 and 1 only representing ant's cloves
+Where means ant moved unit distance towards the right side and means it moved unit distance towards the left Your task is to find and return the integer value representing how many times the ant reaches hack to original starting position.
+
+N=int(input())
+A= list(map(int,input().strip().split()))[:N]
+sum=0
+count=0
+for pos in A:
+    sum += pos
+    if sum == 0:
+        count+=1
+print(count)
