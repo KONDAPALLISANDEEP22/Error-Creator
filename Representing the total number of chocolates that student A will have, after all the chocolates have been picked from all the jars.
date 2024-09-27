@@ -1,0 +1,12 @@
+3.Problem Statement:
+You are given an integer array of size N, representing jars of chocolates. Three students A, B, and C respectively, will pick chocolates one by one from each chocolate jar, till the jar is empty, and then repeat the same with the rest of the jars. Your task is to fine and return an integer value representing the total number of chocolates that student A will have, after all the chocolates have been picked from all the jars.
+
+N=int(input())
+chocolates list(map(int,input().strip().split()))
+total=0
+for jar in chocolates:
+    if jar%3!-0:
+        total+=jar//3+1
+    else:
+        total+=jar//3
+print(total)
